@@ -1,7 +1,7 @@
 class Category:
     count_categories = 0
-    count_goods = set()
-    count_products = []
+    count_uniq_goods = 0
+    products_list = []
 
     def __init__(self, name, characteristic, goods):
         self.name = name
@@ -9,10 +9,12 @@ class Category:
         self.goods = goods
 
         Category.count_categories += 1
-        Category.count_goods.update(goods)
 
         for good in goods:
-            Category.count_products.append(good)
+            Category.products_list.append(good)
+
+
+count_uniq_goods = len(set(Category.products_list))
 
 
 class Product:

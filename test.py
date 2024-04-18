@@ -1,4 +1,3 @@
-import pytest
 from main import Category, Product
 
 
@@ -8,8 +7,7 @@ def test_category_init():
     assert category.characteristic == "Печенье"
     assert category.goods == ["Печенье сладкое", "Печенье соленое"]
     assert Category.count_categories == 1
-    assert len(Category.count_goods) == 2
-    assert len(Category.count_products) == 2
+    assert len(Category.products_list) == 2
 
 
 def test_product_init():
