@@ -23,4 +23,3 @@ class Product:
         self.characteristic = characteristic
         self.price = price
         self.quantity_in_stock = quantity_in_stock
-

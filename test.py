@@ -16,4 +16,3 @@ def test_product_init():
     assert product.characteristic == "Бисквитное"
     assert product.price == 138.0
     assert product.quantity_in_stock == 10
-
