@@ -13,8 +13,7 @@ class Category:
         for good in goods:
             Category.products_list.append(good)
 
-
-count_uniq_goods = len(set(Category.products_list))
+        Category.count_uniq_goods = len(set(Category.products_list))
 
 
 class Product:
